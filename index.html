@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tong Zou · Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio website of Tong Zou — publicity, academic events, research, and video/design works." />
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <img src="assets/avatar.png" alt="avatar" class="avatar" />
+    <div>
+      <h1>Tong Zou</h1>
+      <p>Ph.D. Student · NTU EEE | Publicity · Academic &amp; Research · Career Development</p>
+      <div class="links">
+        <a href="mailto:u202015263@hust.edu.cn">Email</a>
+        <a href="https://github.com/EdithZou" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/CV_StudentUnion.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav container">
+  <a href="#publicity">Publicity</a>
+  <a href="#academic">Academic</a>
+  <a href="#research">Research</a>
+  <a href="#video-design">Video &amp; Design</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main class="container">
+  <section id="intro" class="card">
+    <h2>About</h2>
+    <p>
+      I create clear, timely and audience-focused communications for student communities — from social media copy and posters to short recap videos and event logistics.
+      This site showcases selected works and documents my GitHub-based collaboration workflow (branch → commit → PR → review → merge).
+    </p>
+  </section>
+
+  <section id="publicity" class="card">
+    <h2>Publicity</h2>
+    <div class="grid">
+      <figure class="tile">
+        <img src="assets/publicity_poster.jpg" alt="Orientation Poster sample" />
+        <figcaption>
+          <strong>Orientation Poster</strong><br>
+          A3 print + IG story size. <a href="#" target="_blank" rel="noopener">Process notes</a>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="assets/publicity_wechat.jpg" alt="WeChat article layout" />
+        <figcaption>
+          <strong>WeChat Article</strong><br>
+          Copywriting &amp; layout. <a href="#" target="_blank" rel="noopener">Article link</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="academic" class="card">
+    <h2>Academic Events</h2>
+    <ul class="bullets">
+      <li><strong>3MT / Webinar</strong> — proposal draft, speaker invitation emails, slides, post-event report.</li>
+      <li><strong>Peer Mentoring</strong> — sign-up form, agenda, room &amp; equipment coordination.</li>
+    </ul>
+    <div class="grid">
+      <figure class="tile">
+        <img src="assets/academic_slide.jpg" alt="Academic event slides" />
+        <figcaption>
+          <strong>Event Slides</strong><br>
+          Template for talks and panels.
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="assets/academic_form.jpg" alt="Registration form screenshot" />
+        <figcaption>
+          <strong>Registration Form</strong><br>
+          Microsoft Forms / Event system.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="research" class="card">
+    <h2>Research (Brief)</h2>
+    <p>
+      Medical imaging &amp; AI (3D ultrasound reconstruction and ROI-aware SR for surgical navigation). 
+      Previously: cardiac MRI segmentation and multimodal registration.
+      See my <a href="https://github.com/EdithZou" target="_blank" rel="noopener">GitHub</a> for code highlights.
+    </p>
+  </section>
+
+  <section id="video-design" class="card">
+    <h2>Video &amp; Design</h2>
+    <div class="grid">
+      <figure class="tile">
+        <img src="assets/video_thumb.jpg" alt="30–60s event recap thumbnail" />
+        <figcaption>
+          <strong>Event Recap (60s)</strong><br>
+          Shot on mirrorless camera, cut in PR/CapCut. <a href="#" target="_blank" rel="noopener">Watch</a>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="assets/branding.jpg" alt="Branding kit" />
+        <figcaption>
+          <strong>Branding Kit</strong><br>
+          Colors, typography, export specs.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>For collaboration or materials review, feel free to reach out via <a href="mailto:edithz2002@163.com">email</a>.</p>
+    <details>
+      <summary>Collaboration workflow (GitHub)</summary>
+      <ol>
+        <li>Create a feature branch, e.g., <code>feature/publicity-2025-10</code></li>
+        <li>Commit content &amp; assets with clear messages</li>
+        <li>Open a Pull Request → request review (editor/design)</li>
+        <li>Address comments → merge to <code>main</code> → publish</li>
+      </ol>
+    </details>
+  </section>
+</main>
+
+<footer class="container foot">
+  <small>© <span id="y"></span> Tong Zou · Built with HTML/CSS and hosted on GitHub Pages</small>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
